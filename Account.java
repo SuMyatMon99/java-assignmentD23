@@ -77,6 +77,8 @@ public class Account {
 		acc1.transferTo(acc2, transferAmt);
 		
 		acc2.credit(transferAmt);
+		
+		sc.close();
 	}
 
 }
