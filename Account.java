@@ -40,7 +40,7 @@ public class Account {
 	}
 	public String toString() {
 		
-		String str = "Id:" + this.id + "\t" + "Name:" + this.name + "\t" +  "Balance:" + this.balance;
+		String str = "Id no:" + this.id + "\n" + "Name:" + this.name + "\n" +  "Balance:" + this.balance + '\n';
 		return str;
 	}
 	public static void main(String[] args) {
