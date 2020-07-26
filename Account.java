@@ -64,10 +64,8 @@ public class Account {
 		id2 = sc.next();
 		System.out.print("Enter second acc's name : " );
 		name2 = sc.next();
-		//System.out.print("Enter second acc's balance : " );
-		//bal2 = sc.nextInt();
 		
-		System.out.print("Enter transfer amount : ");
+		System.out.println("Enter transfer amount : ");
 		
 		transferAmt = sc.nextInt();
 		Account acc1 = new Account(id1, name1, bal1);
