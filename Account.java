@@ -31,6 +31,7 @@ public class Account {
 	public void transferTo(Account another, int amt) {
 		if ( amt <= this.balance) {
 			this.balance -= amt;
+			another.credit(amt);
 			System.out.println(toString());
 		}
 		else {
@@ -75,8 +76,6 @@ public class Account {
 		System.out.println(acc1.toString());
 		
 		acc1.transferTo(acc2, transferAmt);
-		
-		acc2.credit(transferAmt);
 		
 		sc.close();
 	}
